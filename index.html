@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RMM Soluciones Tecnológicas</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#inicio">
+        <img src="rmm.jpg" alt="RMM Logo" width="40" class="me-2">
+        RMM Soluciones
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner principal -->
+  <section id="inicio" class="banner" data-aos="fade-in">
+    <div class="overlay">
+      <h1>Innovación Industrial Inteligente</h1>
+      <p>Soldadura, automatización e inteligencia artificial para la industria moderna</p>
+    </div>
+  </section>
+
+  <div class="container mt-5">
+
+    <!-- Inicio / Presentación -->
+    <section id="presentacion" data-aos="fade-up">
+      <h2>RMM Soluciones Tecnológicas</h2>
+      <p class="text-center">RMM Soluciones Tecnológicas es una empresa dedicada a la innovación industrial, especializada en soldadura avanzada, automatización de procesos, desarrollo de producto y aplicación de inteligencia artificial a la manufactura.</p>
+      <p class="text-center">Nuestra misión es transformar la industria con soluciones inteligentes, eficientes y adaptadas a cada cliente.</p>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="mt-5" data-aos="fade-right">
+      <h2 class="text-center mb-4 text-warning">Servicios</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col" data-aos="fade-up">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Soldaduras Especiales</h5>
+              <p class="card-text">Aplicamos técnicas avanzadas para soldadura en materiales complejos y condiciones exigentes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="150">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Ensayos END y ED</h5>
+              <p class="card-text">Realizamos ensayos no destructivos y destructivos para garantizar la calidad de tus procesos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Desarrollo de procesos</h5>
+              <p class="card-text">Diseñamos y optimizamos procesos industriales adaptados a tus necesidades.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="450">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Aplicaciones IA a la manufactura</h5>
+              <p class="card-text">Integramos inteligencia artificial para mejorar la eficiencia y trazabilidad en producción.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre-nosotros" class="mt-5" data-aos="fade-left">
+      <h2 class="text-center mb-4 text-warning">Sobre Nosotros</h2>
+      <p>Somos un equipo apasionado por la tecnología y la mejora continua.</p>
+      <p>Fundado por Mariano y Ramón Ramirez, RMM Soluciones Tecnológicas nace con el objetivo de llevar la industria al siguiente nivel.</p>
+      <p>Trabajamos junto a expertos como Miguel y Matías Quintana y Juan Cabrera, desarrollando soluciones que combinan experiencia técnica con innovación digital.</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="mt-5" data-aos="fade-up">
+      <h2 class="text-center mb-4 text-warning">Contacto</h2>
+
+      <form action="https://formsubmit.co/mrsoldadurasespeciales@outlook.com" method="POST">
+        <input type="hidden" name="_subject" value="Consulta desde web RMM">
+        <input type="hidden" name="_next" value="success.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" name="nombre" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="tel" name="telefono" class="form-control" id="telefono">
+        </div>
+        <div class="mb-3">
+          <label for="consulta" class="form-label">Consulta</label>
+          <textarea name="consulta" class="form-control" id="consulta" rows="3" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-warning">Enviar</button>
+      </form>
+      <p class="mt-3">Ubicación: Falda Cañete, Córdoba</p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    &copy; 2025 RMM Soluciones Tecnológicas
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
