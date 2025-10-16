@@ -50,55 +50,47 @@
 
   <div class="container mt-5">
 
-    <!-- Inicio / Presentación -->
+    <!-- Presentación -->
     <section id="presentacion" data-aos="fade-up">
       <h2>RMM Soluciones Tecnológicas</h2>
       <p class="text-center">RMM Soluciones Tecnológicas es una empresa dedicada a la innovación industrial, especializada en soldadura avanzada, automatización de procesos, desarrollo de producto y aplicación de inteligencia artificial a la manufactura.</p>
       <p class="text-center">Nuestra misión es transformar la industria con soluciones inteligentes, eficientes y adaptadas a cada cliente.</p>
     </section>
 
+    <!-- Video -->
+    <section id="video" class="video-seccion" style="text-align: center; padding: 50px 20px;">
+      <h2 class="subtitulo">Conocé nuestro trabajo</h2>
+      <p>Mirá este breve video sobre cómo desarrollamos nuestras soluciones.</p>
+
+      <div style="
+        display: inline-block;
+        width: 100%;
+        max-width: 900px;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1.2s ease-out forwards;
+      ">
+        <video autoplay muted loop playsinline
+          style="width: 100%; height: auto; aspect-ratio: 30/8; object-fit: cover;">
+          <source src="whatsapp-video.mp4" type="video/mp4" />
+          Tu navegador no soporta el video.
+        </video>
+      </div>
+    </section>
+
+    <style>
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+
     <!-- Servicios -->
-    <!-- ====== SECCIÓN DE VIDEO ====== -->
-<section id="video" class="video-seccion" style="text-align: center; padding: 50px 20px;">
-  <h2 class="subtitulo">Conocé nuestro trabajo</h2>
-  <p>Mirá este breve video sobre cómo desarrollamos nuestras soluciones.</p>
-
-  <div style="
-    display: inline-block;
-    width: 100%;
-    max-width: 900px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1.2s ease-out forwards;
-  ">
-    <video autoplay muted loop playsinline
-      style="width: 100%; height: auto; aspect-ratio: 30/8; object-fit: cover;">
-      <source src="whatsapp-video.mp4" type="video/mp4" />
-      Tu navegador no soporta el video.
-    </video>
-  </div>
-</section>
-
-<!-- ====== ANIMACIÓN CSS ====== -->
-<style>
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
-
-
-    <section id="" class="mt-5" data-aos="fade-right">
-      <h2 class="text-center mb-4 text-warning">
+    <section id="servicios" class="mt-5" data-aos="fade-right">
+      <h2 class="text-center mb-4 text-warning">Nuestros Servicios</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col" data-aos="fade-up">
           <div class="card h-100 shadow-sm">
@@ -147,7 +139,10 @@
     <section id="contacto" class="mt-5" data-aos="fade-up">
       <h2 class="text-center mb-4 text-warning">Contacto</h2>
 
-      <!-- Mensaje de éxito -->
+      <!-- Carteles dinámicos -->
+      <div id="mensaje-enviando" class="alert alert-warning d-none" role="alert">
+        Enviando consulta...
+      </div>
       <div id="mensaje-exito" class="alert alert-success d-none" role="alert">
         ¡Gracias! Tu consulta ha sido enviada correctamente.
       </div>
@@ -176,54 +171,49 @@
 
         <button type="submit" class="btn btn-warning">Enviar</button>
       </form>
+
       <p class="mt-3">Ubicación: Falda Cañete, Córdoba</p>
 
-<a href="https://wa.me/+5491167599691" target="_blank" class="whatsapp-button">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
-  Chat por WhatsApp
-</a>
+      <a href="https://wa.me/+5491167599691" target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+        Chat por WhatsApp
+      </a>
 
-<style>
-  .whatsapp-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 16px;
-    background-color: #25D366; /* verde WhatsApp */
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: transform 0.2s, box-shadow 0.2s;
-    margin-top: 8px;
-  }
-
-  .whatsapp-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  }
-
-  .whatsapp-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-  }
-
-  /* Ajuste para móviles */
-  @media (max-width: 600px) {
-    .whatsapp-button {
-      font-size: 14px;
-      padding: 8px 12px;
-    }
-    .whatsapp-icon {
-      width: 20px;
-      height: 20px;
-    }
-  }
-</style>
-
+      <style>
+        .whatsapp-button {
+          display: inline-flex;
+          align-items: center;
+          padding: 10px 16px;
+          background-color: #25D366;
+          color: white;
+          font-weight: 600;
+          font-size: 16px;
+          border-radius: 30px;
+          text-decoration: none;
+          transition: transform 0.2s, box-shadow 0.2s;
+          margin-top: 8px;
+        }
+        .whatsapp-button:hover {
+          transform: scale(1.05);
+          box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .whatsapp-icon {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+        }
+        @media (max-width: 600px) {
+          .whatsapp-button {
+            font-size: 14px;
+            padding: 8px 12px;
+          }
+          .whatsapp-icon {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      </style>
     </section>
-
   </div>
 
   <!-- Footer -->
@@ -236,17 +226,19 @@
 
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
 
-  <!-- Script formulario con mensaje de éxito -->
+  <!-- Script del formulario -->
   <script>
     const form = document.getElementById('form-contacto');
     const mensajeExito = document.getElementById('mensaje-exito');
+    const mensajeEnviando = document.getElementById('mensaje-enviando');
 
     form.addEventListener('submit', function(e) {
       e.preventDefault();
+      mensajeEnviando.classList.remove('d-none');
+      mensajeExito.classList.add('d-none');
+
       const formData = new FormData(form);
 
       fetch(form.action, {
@@ -255,6 +247,7 @@
         headers: { 'Accept': 'application/json' }
       })
       .then(response => {
+        mensajeEnviando.classList.add('d-none');
         if (response.ok) {
           mensajeExito.classList.remove('d-none');
           form.reset();
@@ -266,11 +259,11 @@
         }
       })
       .catch(error => {
+        mensajeEnviando.classList.add('d-none');
         alert('Ups! Hubo un error al enviar tu consulta.');
         console.error(error);
       });
     });
   </script>
-
 </body>
 </html>
