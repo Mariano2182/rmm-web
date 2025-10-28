@@ -243,3 +243,7 @@ body {
 #inicio {
   margin-bottom: 20px; /* Menos espacio solo debajo del banner */
 }
+body {
+  background: url('silver-shimmery-paper-background.jpg') center center / cover no-repeat fixed;
+  background-color: #f8f9fa; /* color de respaldo por si tarda en cargar */
+}
