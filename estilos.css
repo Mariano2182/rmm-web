@@ -231,6 +231,14 @@ section {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+body {
+  background-image: url('silver-shimmery-paper-background.jpg'); /* silver-shimmery-paper-background.jpg */
+  background-size: cover;        /* la imagen cubre toda la pantalla */
+  background-position: center;   /* centrada */
+  background-attachment: fixed;  /* permanece fija al hacer scroll */
+  background-repeat: no-repeat;  /* sin repetirse */
+  color: #222;                   /* asegura contraste si la imagen es clara */
+}
 
 #inicio {
   margin-bottom: 20px; /* Menos espacio solo debajo del banner */
