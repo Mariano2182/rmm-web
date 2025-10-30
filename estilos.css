@@ -232,7 +232,7 @@ section {
   margin-bottom: 40px;
 }
 body {
-  background-image: url('silver-shimmery-paper-background.jpg'); /* silver-shimmery-paper-background.jpg */
+  background-image: url('silver-shimmery-paper-background.webp'); /* silver-shimmery-paper-background.jpg */
   background-size: cover;        /* la imagen cubre toda la pantalla */
   background-position: center;   /* centrada */
   background-attachment: fixed;  /* permanece fija al hacer scroll */
