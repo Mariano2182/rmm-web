@@ -10,8 +10,21 @@
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.7;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #222; /* texto oscuro */
+    background-color: #d3d3d3; /* gris base */
+
+    /* Fondo metálico tipo chapa inoxidable */
+    background-image: 
+        linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,0,0.05)),
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.1),
+            rgba(255,255,255,0.1) 2px,
+            rgba(0,0,0,0.05) 2px,
+            rgba(0,0,0,0.05) 4px
+        );
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Encabezado y menú */
@@ -191,6 +204,7 @@ section.bg-dark {
         font-size: 0.95rem;
     }
 }
+
 /* Carrusel: mostrar toda la imagen sin recortar */
 #carouselTrabajo .carousel-item img {
   height: 400px;          /* alto fijo */
@@ -206,18 +220,19 @@ section.bg-dark {
     height: 250px;
   }
 }
+
 /* ====== TITULOS PRINCIPALES ====== */
 .titulo-principal {
-  font-size: 2.2rem;     /* tamaño grande y uniforme */
-  font-weight: 800;      /* más grueso que el normal */
-  text-align: center;    /* centrado */
-  margin-bottom: 1.5rem; /* separación inferior */
-  color: #222;           /* color oscuro neutro */
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #222;
 }
 
 /* Si querés mantener el estilo dorado en algunos títulos */
 .titulo-principal.text-warning {
-  color: #ffc107;        /* mismo tono de Bootstrap */
+  color: #ffc107;
 }
 
 /* En pantallas pequeñas, reducir un poco el tamaño */
@@ -226,23 +241,13 @@ section.bg-dark {
     font-size: 1.6rem;
   }
 }
+
 /* Reduce el espacio entre secciones */
 section {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-body {
-  background-image: url('silver-shimmery-paper-background.webp'); /* silver-shimmery-paper-background.webp */
-  background-size: cover;        /* la imagen cubre toda la pantalla */
-  background-position: center;   /* centrada */
-  background-attachment: fixed;  /* permanece fija al hacer scroll */
-  background-repeat: no-repeat;  /* sin repetirse */
-  color: #222;                   /* asegura contraste si la imagen es clara */
-}
 
-#inicio {
-  margin-bottom: 20px; /* Menos espacio solo debajo del banner */
-}
 body {
   background: url('silver-shimmery-paper-background.webp') center center / cover no-repeat fixed;
   background-color: #f8f9fa; /* color de respaldo por si tarda en cargar */
