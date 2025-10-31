@@ -247,8 +247,3 @@ section {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
-body {
-  background: url('silver-shimmery-paper-background.webp') center center / cover no-repeat fixed;
-  background-color: #f8f9fa; /* color de respaldo por si tarda en cargar */
-}
