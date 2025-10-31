@@ -232,7 +232,7 @@ section {
   margin-bottom: 40px;
 }
 body {
-  background-image: url('silver-shimmery-paper-background.webp'); /* silver-shimmery-paper-background.jpg */
+  background-image: url('silver-shimmery-paper-background.webp'); /* silver-shimmery-paper-background.webp */
   background-size: cover;        /* la imagen cubre toda la pantalla */
   background-position: center;   /* centrada */
   background-attachment: fixed;  /* permanece fija al hacer scroll */
@@ -244,6 +244,6 @@ body {
   margin-bottom: 20px; /* Menos espacio solo debajo del banner */
 }
 body {
-  background: url('silver-shimmery-paper-background.jpg') center center / cover no-repeat fixed;
+  background: url('silver-shimmery-paper-background.webp') center center / cover no-repeat fixed;
   background-color: #f8f9fa; /* color de respaldo por si tarda en cargar */
 }
