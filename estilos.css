@@ -237,7 +237,7 @@ body {
   background-position: center;   /* centrada */
   background-attachment: fixed;  /* permanece fija al hacer scroll */
   background-repeat: no-repeat;  /* sin repetirse */
-  color: #222;                   /* asegura contraste si la imagen es clara */
+  color: #f8f9fa;                   /* asegura contraste si la imagen es clara */
 }
 
 #inicio {
