@@ -238,41 +238,27 @@ En RMM creemos que la industria argentina se fortalece con ideas, tecnología y 
  
   <!-- Script del formulario -->
   <script>
-    const form = document.getElementById('form-contacto');
-    const mensajeExito = document.getElementById('mensaje-exito');
-    const mensajeEnviando = document.getElementById('mensaje-enviando');
- 
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      mensajeEnviando.classList.remove('d-none');
-      mensajeExito.classList.add('d-none');
- 
-      const formData = new FormData(form);
- 
-      fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      })
-      .then(response => {
-        mensajeEnviando.classList.add('d-none');
-        if (response.ok) {
-          mensajeExito.classList.remove('d-none');
-          form.reset();
-          setTimeout(() => {
-            window.location.href = form.querySelector('input[name="_next"]').value;
-          }, 3000);
-        } else {
-          alert('Ups! Hubo un problema al enviar tu consulta.');
-        }
-      })
-      .catch(error => {
-        mensajeEnviando.classList.add('d-none');
-        alert('Ups! Hubo un error al enviar tu consulta.');
-        console.error(error);
-      });
-    });
-  </script>
+  const form = document.getElementById('form-contacto');
+  const mensajeExito = document.getElementById('mensaje-exito');
+  const mensajeEnviando = document.getElementById('mensaje-enviando');
+
+  form.addEventListener('submit', function () {
+    // Mostrar mensaje de envío
+    mensajeEnviando.classList.remove('d-none');
+    mensajeExito.classList.add('d-none');
+
+    // NO usamos preventDefault
+    // NO usamos fetch
+    // El navegador envía el formulario normalmente
+    // FormSubmit envía el mail
+
+    // Mensaje visual de éxito (estimado)
+    setTimeout(() => {
+      mensajeEnviando.classList.add('d-none');
+      mensajeExito.classList.remove('d-none');
+    }, 2000);
+  });
+</script>
  
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
